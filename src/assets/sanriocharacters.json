@@ -1,0 +1,77 @@
+[
+  {
+    "Name": "Bad Badtz-Maru",
+    "type": "Penguin",
+    "image": "assets/badtz-maru.gif"
+  },
+  {
+    "Name": "Charmmy Kitty",
+    "type": "Cat",
+    "image": "assets/charmmy-kitty.gif"
+  },
+  {
+    "Name": "Chibimaru",
+    "type": "Puppy",
+    "image": "assets/chibimaru.gif"
+  },
+  {
+    "Name": "Chococat",
+    "type": "Cat",
+    "image": "assets/chococat.jpg"
+  },
+  {
+    "Name": "Cinnamoroll",
+    "type": "Puppy",
+    "image": "assets/cinnamoroll.jpg"
+  },
+  {
+    "Name": "Dear Daniel",
+    "type": "Cat",
+    "image": "assets/dear-daniel.png"
+  },
+  {
+    "Name": "Deery-Lou",
+    "type": "Fawn",
+    "image": "assets/deery-lou.gif"
+  },
+  {
+    "Name": "Hello Kitty",
+    "type": "Cat",
+    "image": "assets/hello-kitty.gif"
+  },
+  {
+    "Name": "Keroppi",
+    "type": "Frog",
+    "image": "assets/keroppi.gif"
+  },
+  {
+    "Name": "Kuromi",
+    "type": "Rabbit",
+    "image": "assets/kuromi.gif"
+  },
+  {
+    "Name": "Little Twin Stars",
+    "type": "Humans",
+    "image": "assets/little-twin-stars.gif"
+  },
+  {
+    "Name": "Mimmy",
+    "type": "Cat",
+    "image": "assets/mimmy.gif"
+  },
+  {
+    "Name": "My Melody",
+    "type": "Rabbit",
+    "image": "assets/my-melody.gif"
+  },
+  {
+    "Name": "Pochacco",
+    "type": "Dog",
+    "image": "assets/pochacco.gif"
+  },
+  {
+    "Name": "Pompompurin",
+    "type": "Dog",
+    "image": "assets/pompompurin.gif"
+  }
+]

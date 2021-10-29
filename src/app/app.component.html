@@ -1,0 +1,128 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  <span>
+    Developed following Read JSON tutorial by
+    <a aria-label="Yann Mulonda" href="https://blog.bitsrc.io/how-to-read-local-json-files-deploy-an-angular-app-a96a881036f2" target="blank" title="Yann Mulonda">
+      Yann Mulonda
+    </a>
+  </span>
+</div>
+
+<!-- Highlight Card -->
+<div class="card highlight-card card-small mt-5">
+  <div class="hk-thumb">
+    <img src="assets/hello-kitty-thumbnail.png" alt="Hello!">
+  </div>
+  <span>{{ title }} app is running!</span>
+</div>
+<div class="content" role="main" style="max-width: 100% !important">
+  <div class="jumbotron text-center p-2" style="background-color: transparent;">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-6 offset-md-1 mx-1 my-1">
+        <h1 class="h1 mb-1">Sanrio characters</h1>
+        <mdb-carousel class="carousel slide carousel-fade w-100 h-25" [animation]="'fade'">
+          <mdb-carousel-item *ngFor="let character of Characters">
+            <div class="view w-100">
+              <img class="d-block w-100" src="{{character.image}}" alt="First slide">
+              <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">{{character.Name}}</h3>
+              <p>{{character.type}}</p>
+            </div>
+          </mdb-carousel-item>
+        </mdb-carousel>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-5 text-md-left ml-3 mt-3">
+        <!-- Resources -->
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 mb-3">
+            <img src="assets/6.png" class="img-fluid z-depth-1"
+              alt="Responsive image">
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mb-3">
+            <img src="assets/4.png" class="img-fluid z-depth-1"
+              alt="Responsive image">
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-6 mb-3">
+            <img src="assets/5.png" class="img-fluid z-depth-1"
+              alt="Responsive image">
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-12 mb-3">
+        <img src="assets/2.jpg" class="img-fluid z-depth-1"
+          alt="Responsive image">
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-6 mb-3">
+        <img src="assets/1.png" class="img-fluid z-depth-1"
+          alt="Responsive image">
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-6 mb-3">
+        <img src="assets/7.png" class="img-fluid z-depth-1"
+          alt="Responsive image">
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+
+  <div class="row">
+    <div class="card special-thx card-big mt-2">
+      <p>
+        List of Sanrio characters:
+        <br>
+        - <a aria-label="List of characters" href="https://hellokitty.fandom.com/wiki/List_of_Sanrio_characters" target="blank" title="List of characters">Hello Kitty Wiki</a>
+        <br>
+        Thanks for helping me with errors I've faced throughout this project:
+        <br>
+        - <a aria-label="resolveJsonModule" href="https://stackoverflow.com/questions/62823189/resolvejsonmodule-not-functioning-with-angular-10" target="blank" title="resolveJsonModule">resolveJsonModule</a>
+        <br>
+        - <a aria-label="default import" href="https://stackoverflow.com/questions/60935889/cant-do-a-default-import-in-angular-9" target="blank" title="default import">default import</a>
+        <br>
+        - <a aria-label="@angular/cdk/a11y" href="https://www.codegrepper.com/code-examples/typescript/Cannot+find+module+%27%40angular%2Fcdk%2Fa11y%27" target="blank" title="@angular/cdk/a11y">@angular/cdk/a11y</a>
+        <br>
+        - <a aria-label="angular mdb carousel" href="https://pretagteam.com/question/is-there-a-way-to-make-an-angular-mdb-carousel-for-background-images" target="blank" title="angular mdb carousel">angular mdb carousel</a>
+
+      </p>
+    </div>
+    <ul id="ngfor-test">
+      <li *ngFor="let character of Characters">
+       <h2>{{character.Name}}</h2>
+       <p>{{character.type}}</p>
+      </li>
+    </ul>
+  </div>
+
+</div>
