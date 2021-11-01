@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as sanriocharacters from '../assets/sanriocharacters.json';
+import sanriocharacters from '../assets/sanriocharacters.json';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,9 @@ import * as sanriocharacters from '../assets/sanriocharacters.json';
 export class AppComponent {
   title = 'Read JSON: demo tutorial';
   Characters: any = sanriocharacters;
+
+  constructor() {
+    console.log(this.Characters[1])
+  }
+   
 }
